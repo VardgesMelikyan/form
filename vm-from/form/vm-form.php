@@ -299,6 +299,16 @@ function vm_shortcode( $atts ) {
                               </label>
                           </div>';
                 break;
+                case 'emptyGrid-'.$data_id:
+                    echo '
+                          <div class="field-option-wrapper ">
+                          </div>';
+                break;
+                case 'emptyFull-'.$data_id:
+                    echo '
+                          <div class="field-option-wrapper ">
+                          </div>';
+                break;
                 default:
             }
         if(isset($cols[1]) && $cols[1] == 1){
