@@ -1,0 +1,57 @@
+
+#form-container{
+  background: #FAFAFA;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 6px solid #305A72;
+}
+#form-container ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+#form-container ul li{
+  margin-bottom: 10px;
+  min-height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#form-container .wrapper_field_checkbox, #form-container .wrapper_field_radio{
+  display: flex;
+}
+#form-container .field-option-wrapper{
+  width: 100%
+}
+#form-container .field-option-wrapper:nth-child(2){
+  margin-left: 10px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #form-container ul li{
+    display: block
+  }
+  #form-container .field-option-wrapper:nth-child(2){
+    margin-left: 0
+  }
+  #form-container .file-custom{
+    width: fit-content
+  }
+  #form-container .file-custom:before{
+    content: ''
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

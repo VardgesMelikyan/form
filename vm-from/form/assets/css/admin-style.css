@@ -1,0 +1,150 @@
+.wrapper{
+  border:1px solid grey;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;    
+}
+.grid-container-full {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #0071a1;
+  border-radius: 3px;
+  border: 1px solid #0071a1;
+}
+.add_column{
+  transition: box-shadow 180ms ease-in;
+}
+.add_column:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(1, 96, 135, 0.6);
+}
+.add_field {
+  transition: box-shadow 180ms ease-in;
+}
+
+.add_field:hover {
+  box-shadow: 0 0 0 3px rgba(1, 96, 135, 0.6);
+}
+.field-popup {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  position:absolute;
+  text-align:left;
+  width:60%;
+  z-index:50;
+  padding: 25px 25px 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.field-popup label {
+  display: block;
+}
+
+.field-popup p, .field-popup.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.custom-field-options{
+  display: block;
+}
+.field-option-wrapper{
+  padding: 10px;
+  text-align: left
+}
+.options{
+  font-size: 14px;
+}
+.field-option-wrapper > input[type="text"], .field-option-wrapper > input[type="email"], .field-option-wrapper > input[type="date"]{
+  padding: 0px 5px;
+  font-size: 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  width: 100%
+}
+.form_title{
+  padding: 0px 5px;
+  font-size: 20px;
+  margin: 8px 0;
+  width: 100%
+}
+.field-options-text, .field-options-email, .field-options-checkbox, .field-options-radio, .field-options-date, .field-options-file{
+  display: flex;
+  flex-direction: column;
+}
+.field-options-text label, .field-options-email label, .field-options-checkbox label, .field-options-radio label, .wrapper_field_checkbox, .wrapper_field_radio, .field-options-date label, .field-options-file label{
+  font-size: 16px;
+}
+.field-options-text input:focus, .field-options-email input:focus, .field-options-date input:focus, .field-options-file input:focus {
+  outline: 3px solid transparent;
+}
+.field-options-text input[type=text], .field-options-email input[type=text], .field-options-checkbox input[type=text], .field-options-radio input[type=text], .field-options-date input[type=text], .field-options-file input[type=text]{
+  padding: 0px 5px;
+  font-size: 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  width: 80%
+}
+#form-container{
+  width:50%;
+  margin:auto;
+}
+.wrapper_field_checkbox, .wrapper_field_checkbox{
+  width: 90%
+}
+div[class^='container_field_checkbox_']{
+  display: inline-block;
+}
+.field-option-wrapper [type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+.field-option-wrapper [type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+.field-option-wrapper [type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.file-custom, .file-custom:before{
+  font-size: 16px;
+  height: initial;
+}
+.removefield{
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
